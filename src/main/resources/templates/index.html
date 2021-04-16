@@ -31,87 +31,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- webfonts -->
 </head>
 <body>
-<!-- container -->
-<!-- header -->
-<div class="header">
-    <!-- top-header -->
-    <div class="top-header">
-        <div class="container">
-            <div class="rigister-info">
-                <ul>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">SignUp</a></li>
-                    <div class="clearfix"></div>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!-- /top-header -->
-    <!-- bottom-header -->
-    <div class="bottom-header">
-        <div class="container">
-            <div class="bottom-header-left">
-                <p>The Finest Genuine Leather meet with Ingenious Craftsmen Shoes </p>
-            </div>
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" title="gaia"/></a>
-            </div>
-            <div class="bottom-header-right">
-                <ul>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Checkout</a></li>
-                </ul>
-                <div class="search-cart">
-                    <div class="search-box">
-                        <form>
-                            <input type="text" value="Search..."/>
-                            <input type="submit" value=""/>
-                        </form>
-                    </div>
-                    <div class="cart-box">
-                        <select>
-                            <option> 02 Items</option>
-                            <option> 03 Items</option>
-                            <option> 04 Items</option>
-                        </select>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /bottom-header -->
-</div>
-<!-- header -->
-<!--- top-nav -->
-<div class="top-nav">
-    <div class="container">
-        <span class="menu"> </span>
-        <ul>
-            <li class="active"><a href="index.html">Home<span> </span></a></li>
-            <li><a th:href="@{/collections}">Collections<span> </span></a></li>
-            <li><a th:href="@{/404}">New Arrivals<span> </span></a></li>
-            <li><a th:href="@{/404}">Sale<span> </span></a></li>
-            <li><a th:href="@{/404}">Accessories<span> </span></a></li>
-            <li><a th:href="@{/about}">About Us<span> </span></a></li>
-            <li><a th:href="@{/contact}">Contact Us<span> </span></a></li>
-            <div class="clearfix"></div>
-        </ul>
-    </div>
-</div>
-<!--- top-nav -->
-<!-- script-for-nav -->
-<script>
-    $(document).ready(function () {
-        $("span.menu").click(function () {
-            $(".top-nav ul").slideToggle(500);
-        });
-    });
-</script>
 
-<!-- /script-for-nav -->
+<div th:replace="~{header :: navi}" />
+
 <!-- banner -->
 <div class="banner">
     <div class="container">
